@@ -1,0 +1,271 @@
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}   
+body{
+    font-family: "Inter";
+    overflow: scroll;
+}
+h1{
+    font-size: 3.5vw;
+    text-align: center;
+}
+h6{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #27ae60;
+}
+p{
+    font-size: 1.07rem;
+    font-family: serif;
+    line-height: 1.5rem;
+}
+.box-container{
+    display: flex;
+    width: 100vw;
+    background: #F7F7F4;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+img{
+    max-width: 100%;
+    height: auto; 
+    margin-right: 20px;
+}
+.head{
+    text-align: center;
+}
+.head h1{
+    color: #ffc40c;
+}
+.sidebar{
+    display: flex;
+    width: 318px;
+    height: 700px;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+}
+.sidebar .logo {
+    display: block;
+    text-align: center;
+}
+.sidebar .logo svg{
+    width: 42px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: #65676D;
+    margin-top: 1rem;
+}
+.sidebar .navlist{
+    width: 318px;
+    display: flex;
+    padding: 0px 0px 20px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+.sidebar .navlist a{
+    display: flex;
+    text-decoration: none;
+    padding: 1rem 0 0 2rem;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #65676D;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+.sidebar .navlist a:hover{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    background: #FFF4EE;
+    color: #FD7B38;
+    border-right: 4px solid #FD7B38;
+    
+}
+.active{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    background: #FFF4EE;
+    color: #FD7B38 !important;
+    stroke: #FD7B38;
+    fill: #FD7B38;
+    border-right: 4px solid #FD7B38;
+}
+.link.active svg path {
+    stroke: #FD7B38; 
+}
+
+.link.active svg rect, .link.active svg circle {
+    fill: #FD7B38; 
+}
+.sidebar .navlist a svg{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 6px 18px 5.25px 6px;
+    justify-content: center;
+    align-items: center;
+    color: #65676D;   
+}
+.content{
+    display: flex;
+}
+table.center {
+    margin-top: 7rem;
+  }
+.content .form-container{
+    display: flex;
+    width: 467.333px;
+    padding: 20px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: #FFF;
+    margin: 7rem 13.5rem 0 4rem;
+}
+.content .form-container .heading{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.content .form-container .heading p, .content .create-box .heading p{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.content .form-container .heading svg{
+    color: #65676D;
+    width: 22.5px;
+    height: 22.5px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.content .form-container #task-list{
+    width: 100%;
+}
+.content .form-container #task-list .task{
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background: #FFF;
+    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.10) inset;
+}
+.content .form-container #task-list .task h4{
+    flex: 1 0 0;
+    color: #65676D;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    text-transform: capitalize;
+
+}
+.content .form-container #task-list .task h4 span{
+    color: #65676D;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    margin-right: 10px;
+}
+.content .form-container #task-list .task h4 svg{
+    margin-right: 0;
+    float: right;
+    cursor: pointer;
+}
+.content .create-box{
+    width: 400px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+}
+.content .create-box svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    float: right;
+    margin: 1.4rem;
+    cursor: pointer;
+}
+.content .create-box .heading{
+    margin: 6rem 0 0 2rem;
+    padding: 1rem;
+}
+form{
+    margin: 0 3rem 0 3rem;
+}
+input[type=text], textarea, input[type=submit], input[type=email], input[type=tel], select{
+    width: 318px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #65676D;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+input[type=text]:nth-child(1){
+    margin-top: 0 !important;
+}
+textarea{
+    width: 318px;
+    height: 221px;
+}
+input[type=submit]{
+    margin-top: 0 !important;
+    color: #FFF;
+    padding: 13px;
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid #E6ECF0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #FD7B38;
+}
+.content .profile-box{
+    width: 450px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    display: inline-block;
+    background: #FFF;
+    margin-left: 10rem;
+    padding: 2rem;
+}
+.selected {
+    background-color: #e0e0e0;
+}
